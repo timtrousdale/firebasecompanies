@@ -7,9 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import { MatCardModule, MatListModule, MatToolbarModule } from "@angular/material";
+import { MatCardModule, MatFormFieldModule, MatListModule, MatToolbarModule } from "@angular/material";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { CompanyEditComponent } from './company/company-edit/company-edit.component';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { CompanyEditComponent } from './company/company-edit/company-edit.compon
     MatListModule,
     MatCardModule,
     MatToolbarModule,
-    FlexLayoutModule
+    MatFormFieldModule,
+    FlexLayoutModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
